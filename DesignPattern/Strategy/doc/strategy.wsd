@@ -1,0 +1,92 @@
+@startuml
+
+package FlyBehaviors <<Rectangle>> 
+{
+    interface FlyBehavior 
+    {
+        +void fly()
+    }
+
+    class FlyWithWings 
+    {
+        +void fly() //带着翅膀飞
+    }
+
+    class FlyNoWay 
+    {
+        +void fly() //不会飞
+    }
+
+    class FlyWithRocket {
+        +void fly() //坐着火箭飞
+    }
+}
+FlyBehavior <|.. FlyWithWings
+FlyBehavior <|.. FlyNoWay
+FlyBehavior <|.. FlyWithRocket
+
+
+'A -[hidden]> B  表示A的右边是B
+'A -[hidden]-> B  表示A的下边是B
+'FlyWithWings -[hidden]> FlyWithRocket 
+'FlyWithRocket -[hidden]> FlyNoWay
+'FlyBehavior -[hidden]-> FlyWithRocket
+package QuackBehaviors <<Rectangle>> 
+{
+    interface QuackBehavior 
+    {
+        +void quack()
+    }
+
+    class Quack 
+    {
+        +void quack() //呱呱叫
+    }
+
+    class Squeak 
+    {
+        +void quack() //吱吱叫
+    }
+
+    class MuteQuack 
+    {
+        +void quack() //不会叫
+    }
+}
+
+QuackBehavior <|.. Quack
+QuackBehavior <|.. Squeak
+QuackBehavior <|.. MuteQuack
+
+
+package Ducks <<Rectangle>> 
+{
+    abstract class Duck 
+    {
+        +void PerformSwim() //游泳
+        +void PerformFly() //飞行
+        +void PerformQuack() //叫
+        +virtual void display() //自我介绍
+        -FlyBehavior* flyBehavior
+        -QuackBehavior* quackBehavior
+    }
+
+    class MallardDuck 
+    {
+        void display()
+    }
+
+    class YellowDuck 
+    {
+        void display()
+    }
+}
+Duck <|-- MallardDuck
+Duck <|-- YellowDuck
+Duck --> FlyBehavior
+Duck --> QuackBehavior
+
+'FlyBehaviors -[hidden]> QuackBehaviors
+'QuackBehaviors -[hidden]> Ducks
+
+@enduml
