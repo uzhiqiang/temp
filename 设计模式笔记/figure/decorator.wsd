@@ -1,0 +1,48 @@
+@startuml
+
+package components <<rectangle>> 
+{
+    abstract Component
+    {
+        methodA()
+        methodB()
+        //其他方法
+    }
+
+    class ConcreteComponent
+    {
+        methodA()
+        methodB()
+        //其他方法
+    }
+}
+Component <|-- ConcreteComponent
+
+package decorators <<rectangle>>
+{
+    abstract Decorator
+    {
+        methodA()
+        methodB()
+        //其他方法
+    }
+
+    class ConcreteDecoratorA
+    {
+        methodA()
+        methodB()
+        Component WrappedObj
+    }
+
+    class ConcreteDecoratorB
+    {
+        methodA()
+        methodB()
+        Component WrappedObj
+    }
+}
+Decorator <|-- ConcreteDecoratorA
+Decorator <|-- ConcreteDecoratorB
+Component <|-- Decorator
+Decorator --> Component
+@enduml

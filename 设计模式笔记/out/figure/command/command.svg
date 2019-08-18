@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="462px" preserveAspectRatio="none" style="width:444px;height:462px;" version="1.1" viewBox="0 0 444 462" width="444px" zoomAndPan="magnify"><defs><filter height="300%" id="fn5ovwhpcp7gw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster commands--><rect fill="#FFFFFF" filter="url(#fn5ovwhpcp7gw)" height="306" style="stroke: #000000; stroke-width: 1.5;" width="158" x="156" y="16"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="78" x="196" y="31.5352">commands</text><!--class Command--><rect fill="#FEFECE" filter="url(#fn5ovwhpcp7gw)" height="73.9102" id="Command" style="stroke: #A80036; stroke-width: 1.5;" width="91" x="183.5" y="43"/><ellipse cx="198.5" cy="59" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M194.9277,55.2651 L194.9277,53.1069 L202.3071,53.1069 L202.3071,55.2651 L199.8418,55.2651 L199.8418,63.3418 L202.3071,63.3418 L202.3071,65.5 L194.9277,65.5 L194.9277,63.3418 L197.3931,63.3418 L197.3931,55.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="59" x="212.5" y="63.5352">Command</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="184.5" x2="273.5" y1="75" y2="75"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="184.5" x2="273.5" y1="83" y2="83"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="189.5" y="97.6348">execute()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="189.5" y="110.5898">undo()</text><!--class ConcreteCommand--><rect fill="#FEFECE" filter="url(#fn5ovwhpcp7gw)" height="73.9102" id="ConcreteCommand" style="stroke: #A80036; stroke-width: 1.5;" width="142" x="164" y="240"/><ellipse cx="179" cy="256" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M181.4731,262.1431 Q180.8921,262.4419 180.2529,262.5913 Q179.6138,262.7407 178.9082,262.7407 Q176.4014,262.7407 175.0815,261.0889 Q173.7617,259.437 173.7617,256.3159 Q173.7617,253.1865 175.0815,251.5347 Q176.4014,249.8828 178.9082,249.8828 Q179.6138,249.8828 180.2612,250.0322 Q180.9087,250.1816 181.4731,250.4805 L181.4731,253.2031 Q180.8423,252.6221 180.2488,252.3523 Q179.6553,252.0825 179.0244,252.0825 Q177.6797,252.0825 176.9949,253.1492 Q176.3101,254.2158 176.3101,256.3159 Q176.3101,258.4077 176.9949,259.4744 Q177.6797,260.541 179.0244,260.541 Q179.6553,260.541 180.2488,260.2712 Q180.8423,260.0015 181.4731,259.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="110" x="193" y="260.5352">ConcreteCommand</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="165" x2="305" y1="272" y2="272"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="165" x2="305" y1="280" y2="280"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="170" y="294.6348">execute()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="170" y="307.5898">undo()</text><!--class Invoker--><rect fill="#FEFECE" filter="url(#fn5ovwhpcp7gw)" height="73.9102" id="Invoker" style="stroke: #A80036; stroke-width: 1.5;" width="142" x="6" y="43"/><ellipse cx="51.75" cy="59" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M54.2231,65.1431 Q53.6421,65.4419 53.0029,65.5913 Q52.3638,65.7407 51.6582,65.7407 Q49.1514,65.7407 47.8315,64.0889 Q46.5117,62.437 46.5117,59.3159 Q46.5117,56.1865 47.8315,54.5347 Q49.1514,52.8828 51.6582,52.8828 Q52.3638,52.8828 53.0112,53.0322 Q53.6587,53.1816 54.2231,53.4805 L54.2231,56.2031 Q53.5923,55.6221 52.9988,55.3523 Q52.4053,55.0825 51.7744,55.0825 Q50.4297,55.0825 49.7449,56.1492 Q49.0601,57.2158 49.0601,59.3159 Q49.0601,61.4077 49.7449,62.4744 Q50.4297,63.541 51.7744,63.541 Q52.4053,63.541 52.9988,63.2712 Q53.5923,63.0015 54.2231,62.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="72.25" y="63.5352">Invoker</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="147" y1="75" y2="75"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="12" y="89.6348">Command commandObj</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="147" y1="95.9551" y2="95.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="12" y="110.5898">SetCommand()</text><!--class Receiver--><rect fill="#FEFECE" filter="url(#fn5ovwhpcp7gw)" height="60.9551" id="Receiver" style="stroke: #A80036; stroke-width: 1.5;" width="81" x="277.5" y="391"/><ellipse cx="292.5" cy="407" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M294.9731,413.1431 Q294.3921,413.4419 293.7529,413.5913 Q293.1138,413.7407 292.4082,413.7407 Q289.9014,413.7407 288.5815,412.0889 Q287.2617,410.437 287.2617,407.3159 Q287.2617,404.1865 288.5815,402.5347 Q289.9014,400.8828 292.4082,400.8828 Q293.1138,400.8828 293.7612,401.0322 Q294.4087,401.1816 294.9731,401.4805 L294.9731,404.2031 Q294.3423,403.6221 293.7488,403.3523 Q293.1553,403.0825 292.5244,403.0825 Q291.1797,403.0825 290.4949,404.1492 Q289.8101,405.2158 289.8101,407.3159 Q289.8101,409.4077 290.4949,410.4744 Q291.1797,411.541 292.5244,411.541 Q293.1553,411.541 293.7488,411.2712 Q294.3423,411.0015 294.9731,410.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="306.5" y="411.5352">Receiver</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="278.5" x2="357.5" y1="423" y2="423"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="278.5" x2="357.5" y1="431" y2="431"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="283.5" y="445.6348">action()</text><!--class Client--><rect fill="#FEFECE" filter="url(#fn5ovwhpcp7gw)" height="48" id="Client" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="369" y="253"/><ellipse cx="384" cy="269" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M386.4731,275.1431 Q385.8921,275.4419 385.2529,275.5913 Q384.6138,275.7407 383.9082,275.7407 Q381.4014,275.7407 380.0815,274.0889 Q378.7617,272.437 378.7617,269.3159 Q378.7617,266.1865 380.0815,264.5347 Q381.4014,262.8828 383.9082,262.8828 Q384.6138,262.8828 385.2612,263.0322 Q385.9087,263.1816 386.4731,263.4805 L386.4731,266.2031 Q385.8423,265.6221 385.2488,265.3523 Q384.6553,265.0825 384.0244,265.0825 Q382.6797,265.0825 381.9949,266.1492 Q381.3101,267.2158 381.3101,269.3159 Q381.3101,271.4077 381.9949,272.4744 Q382.6797,273.541 384.0244,273.541 Q384.6553,273.541 385.2488,273.2712 Q385.8423,273.0015 386.4731,272.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="398" y="273.5352">Client</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="370" x2="432" y1="285" y2="285"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="370" x2="432" y1="293" y2="293"/><!--link Command to ConcreteCommand--><path d="M230.75,137.459 C231.755,170.4543 232.9878,210.9319 233.8663,239.7776 " fill="none" id="Command-ConcreteCommand" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="223.7407,137.2581,230.1286,117.0542,237.7343,136.8318,223.7407,137.2581" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Invoker to Command--><path d="M148.25,107.6416 C158.2797,108.0994 168.3094,107.1073 178.339,104.6653 " fill="none" id="Invoker-Command" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="183.2627,103.35,173.5353,101.8083,178.4321,104.6404,175.6,109.5373,183.2627,103.35" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Invoker to Command--><!--link ConcreteCommand to Receiver--><path d="M256.3746,314.2123 C269.1098,336.3839 285.1812,364.3637 297.7184,386.1904 " fill="none" id="ConcreteCommand-Receiver" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="300.3375,390.7503,299.3233,380.9538,297.8471,386.4146,292.3863,384.9384,300.3375,390.7503" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Client to Receiver--><path d="M387.1077,301.1861 C373.7148,324.5025 353.3015,360.0414 338.1292,386.4557 " fill="none" id="Client-Receiver" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="335.551,390.9443,343.5022,385.1324,338.0414,386.6086,336.5652,381.1478,335.551,390.9443" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="26" x="362" y="357.5684">创建</text><!--link Client to ConcreteCommand--><path d="M368.8459,277 C352.4311,277 331.6999,277 311.4871,277 " fill="none" id="Client-ConcreteCommand" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="306.3623,277,315.3623,281,311.3623,277,315.3623,273,306.3623,277" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="26" x="324.5" y="270.5684">创建</text><!--link Client to ConcreteCommand--><!--
+@startuml
+
+package commands <<rectangle>>
+{
+    interface Command
+    {
+        execute()
+        undo()
+    }
+
+    class ConcreteCommand
+    {
+        execute()
+        undo()
+    }
+
+}
+
+Command <|.. ConcreteCommand
+
+class Invoker
+{
+    Command commandObj
+    SetCommand()
+}
+Invoker - -> Command
+
+class Receiver
+{
+    action()
+}
+
+ConcreteCommand - -> Receiver
+
+class Client 
+{
+
+}
+Client - -> Receiver : 创建
+Client - -> ConcreteCommand : 创建
+
+
+Invoker -[hidden]> Command 
+Client -[hidden]> ConcreteCommand
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 01:10:25 CST 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 12.0.2+10
+Operating System: Mac OS X
+OS Version: 10.14.5
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

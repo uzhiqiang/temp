@@ -1,0 +1,78 @@
+@startuml
+
+package beverage <<rectangle>>
+{
+    abstract class Beverage
+    {
+        std::string description
+        virtual std::string GetDescription()
+        virtual double cost()
+    }
+
+    class HouseBlend
+    {
+        double cost() override
+    }
+
+    class DarkRoast
+    {
+        double cost() override
+    }
+
+    class Espresso
+    {
+        double cost() override
+    }
+
+    class Decaf 
+    {
+        double cost() override
+    }
+}
+Beverage <|-- HouseBlend
+Beverage <|-- DarkRoast
+Beverage <|-- Espresso
+Beverage <|-- Decaf
+
+
+package condiments <<rectangle>>
+{
+    abstract class CondimentDecorator
+    {
+        Beverage *beverage
+        virtual std::string GetDescription()
+    }
+
+    class Milk
+    {
+        std::string GetDescription()
+        double cost()
+    }
+
+    class Mocha
+    {
+        std::string GetDescription()
+        double cost()
+    }
+
+    class Soy
+    {
+        std::string GetDescription()
+        double cost()
+    }
+
+    class Whip
+    {
+        std::string GetDescription()
+        double cost()
+    }
+}
+
+CondimentDecorator <|-- Milk
+CondimentDecorator <|-- Mocha
+CondimentDecorator <|-- Soy
+CondimentDecorator <|-- Whip
+
+Beverage <|-- CondimentDecorator
+CondimentDecorator --> Beverage
+@enduml

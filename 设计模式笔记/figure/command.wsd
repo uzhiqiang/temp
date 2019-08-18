@@ -1,0 +1,45 @@
+@startuml
+
+package commands <<rectangle>>
+{
+    interface Command
+    {
+        execute()
+        undo()
+    }
+
+    class ConcreteCommand
+    {
+        execute()
+        undo()
+    }
+
+}
+
+Command <|.. ConcreteCommand
+
+class Invoker
+{
+    Command commandObj
+    SetCommand()
+}
+Invoker --> Command
+
+class Receiver
+{
+    action()
+}
+
+ConcreteCommand --> Receiver
+
+class Client 
+{
+
+}
+Client --> Receiver : 创建
+Client --> ConcreteCommand : 创建
+
+
+Invoker -[hidden]> Command 
+Client -[hidden]> ConcreteCommand
+@enduml

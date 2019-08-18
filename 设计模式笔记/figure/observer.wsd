@@ -1,0 +1,40 @@
+@startuml
+package Subject <<rectangle>>
+{
+    abstract class Subject 
+    {
+        RegisterObserver()
+        RemoveObserver()
+        NotifyObserver()
+    }
+
+    class ConcreteSubject
+    {
+        RegisterObserver()
+        RemoveObserver()
+        NotifyObserver()
+
+        getState()
+        SetState()
+    }
+}
+Subject <|-- ConcreteSubject 
+
+package Observer <<rectangle>>
+{
+    interface Observer
+    {
+        update()
+    }
+
+    class ConcreteObserver
+    {
+        update()
+    }
+}
+
+Observer <|.. ConcreteObserver
+Subject --> Observer : 拥有一个Observers数组
+ConcreteObserver --> Subject : 拥有一个Subject
+Subject -[hidden]> Observer
+@enduml
